@@ -13,3 +13,6 @@
 12	echo {a..z}{a..z} | tr " " "\n" | grep -v "oo" to print all possible combinations of two letters exluding oo	
 13	pintf "%.2f \n" $NUM to print NUM to 2 decimal places
 14	echo "ibase=10;obase=16;$DECIMAL" | bc to convert decimal from base 10 to base 16
+15	tr 'a-zA-Z' 'n-za-mN-ZA-M' to encode and decode messages in rot13 encryption
+16	paste - - | cut -f1 to select odd items from a given list
+17	 printf "%o" $((5#$(echo $WATER | tr "water" "01234") + 5#$(echo $STIR | tr "stir." "01234"))) | tr "012345678" "bestchol" to add numbers in base water and base stir. and print the res	ult in base bestchol
