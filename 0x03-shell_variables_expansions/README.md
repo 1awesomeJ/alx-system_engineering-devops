@@ -9,3 +9,7 @@
 8	echo $((128+$TRUEKNOWLEDGE)) to add 128 to the value stored in the env variable trueknowledge and display the output
 9	echo $(($POWER/$DIVIDE)) to print the result of the variable POWER divided by the variable DIVIDE
 10	echo $(($BREATH**$LOVE)) to print the result of breath to the power of love
+11	echo "ibase=2;$BINARY" | bc to change from $BINARY from base 2 to base 10
+12	echo {a..z}{a..z} | tr " " "\n" | grep -v "oo" to print all possible combinations of two letters exluding oo	
+13	pintf "%.2f \n" $NUM to print NUM to 2 decimal places
+14	echo "ibase=10;obase=16;$DECIMAL" | bc to convert decimal from base 10 to base 16
