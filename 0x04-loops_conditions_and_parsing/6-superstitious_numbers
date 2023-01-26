@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script is displaying the string "Best School" 10 times
+k=1
+while [ $k -le  20 ]
+do
+if [ $k -eq 4 ]; then
+echo $k
+echo bad luck from China
+elif [ $k -eq 9 ]; then
+echo $k
+echo bad luck from Japan
+elif [ $k -eq 17 ]; then
+echo $k
+echo bad luck from Italy
+else
+echo $k
+fi
+k=$((k+1))
+done
