@@ -4,7 +4,7 @@ k=0
 while [ $k -lt  10 ]
 do
 if [ $k -eq 8 ]; then
-echo -e "Best school\nHi"
+echo -e "Best School\nHi"
 else
 echo Best School
 fi
