@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script is displaying the string "Best School" 10 times
+k=1
+while [ $k -le  100 ]
+do
+if [[ $((k % 3 )) -eq 0 && $((k % 5)) -ne 0 ]]; then
+echo Fizz
+elif [[ $((k % 5 )) -eq 0 && $((k % 3)) -ne 0 ]]; then
+echo Buzz
+elif ((k % 15 == 0))
+then
+echo FizzBuzz
+else
+echo $k
+fi
+k=$((k+1))
+done
