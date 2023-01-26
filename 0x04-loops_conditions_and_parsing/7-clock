@@ -3,7 +3,7 @@
 k=0
 while [ $k -le  12 ]
 do
-echo Hour $k
+echo Hour: $k
 j=1
     while [ $j -le 59 ] 
     do
