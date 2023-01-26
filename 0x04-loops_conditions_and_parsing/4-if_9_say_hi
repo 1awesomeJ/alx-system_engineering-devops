@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script is displaying the string "Best School" 10 times
+k=0
+while [ $k -lt  10 ]
+do
+if [ $k -eq 8 ]; then
+echo -e "Best school\nHi"
+else
+echo Best School
+fi
+k=$((k+1))
+done
