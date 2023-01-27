@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script displays its own PID
+trap "echo 'I am invincible!!!'" SIGTERM
+k=1
+while [ $k -gt 0 ]; do
+echo To infinity and beyond
+sleep 2
+done
