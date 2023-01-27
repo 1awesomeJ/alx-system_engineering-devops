@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script displays its own PID
+
+k=$(pgrep -f 7-highlander)
+kill -9 "$k"
