@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script displays its own PID
+# shellcheck disable=SC2009
+ps -A --forest --format user,pid,%cpu,%mem,vsz,rss,tty,stat,lstart,time,command | grep --line-buffered "bash"
+#ps -eo user,lstart,args
