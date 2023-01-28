@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script displays its own PID
+
+for k in /proc/[0-9]*; do
+    c=$(tr '\0' '\n' < "$k/cmdline")
+    if [[ $c == *"bash"* ]]; then
+    echo "${k##*/} $c"
+    fi
+done
