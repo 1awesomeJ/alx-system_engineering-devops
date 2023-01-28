@@ -10,11 +10,17 @@ if [ "$1" == "start" ]; then
 elif [ "$1" == "stop" ]; then
     pid_file="$PIDF"
     pid=$(cat "$pid_file")
-    kill -9 $pid
+    kill -9 "$pid"
     rm "$pid_file"
     echo manage_my_process stopped
 elif [ "$1" = "restart" ]; then
-    echo restart
+    pid_file="$PIDF"
+    pid=$(cat "$pid_file")
+    kill -9 "$pid"
+    rm "$pid_file"
+    $FILE &
+    echo $! > $PIDF
+    echo manage_my_process restarted
 else 
     echo "Usage: manage_my_process {start|stop|restart}"
 fi
