@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script displays its own PID
+PIDF=/var/run/myscript.pid
+echo $$ > $PIDF
+trap 'echo "I hate the kill command"; rm $PIDF; exit' SIGTERM
+trap 'echo "Y U no love me?!"; rm $PIDF; exit' SIGINT
+trap 'echo "Y U no love me?"; rm $PIDF; exit' SIGQUIT
+
+while true; do
+echo To infinity and beyond
+sleep 2
+done
