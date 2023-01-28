@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script displays its own PID
+PIDF=/var/run/my_process.pid
+FILE=./manage_my_process
+
+if [ "$1" == "start" ]; then
+    $FILE &
+    echo $! > $PIDF
+    echo manage_my_process started
+elif [ "$1" = "stop" ]; then
+    echo stop
+elif [ "$1" = "restart" ]; then
+    echo restart
+else 
+    echo "Usage: manage_my_process {start|stop|restart}"
+fi
