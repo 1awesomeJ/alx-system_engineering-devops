@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # This script displays its own PID
-ps -A --forest --format user,pid,%cpu,%mem,vsz,rss,tty,stat,lstart,time,command
+#ps -A --forest --format user,pid,%cpu,%mem,vsz,rss,tty,stat,lstart,time,command
+ps -eo user,lstart,args
