@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-pattern = /\A\[A-Z]+\z/
+pattern = /[A-Z]/
 input = ARGV
 match =[]
 input.each do |k|
