@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-pattern = /hbt*n/
+pattern = /hbt{1,4}n/
 input = ARGV
 match =[]
 input.each do |k|
