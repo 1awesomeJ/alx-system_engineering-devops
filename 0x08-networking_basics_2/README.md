@@ -1,0 +1,1 @@
+We continued our work on netwroking basics. We worked on using the /etc/hosts file to set some network configurations, specifically our own IP address, as well as setting IP addresses for given domain names. we used the ping command to see these changes in effect. we also worked with the netcat(nc) command as well as telnet and ifconfig
