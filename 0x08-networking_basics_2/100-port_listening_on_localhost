@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-# This script initiates a listening on port 98 0n local host
+# This script initiates a listening on port 98 0n localhost 
 
-
-port=98
-
-sudo nc -l $port
+sudo nc -l(.){0,12}98
